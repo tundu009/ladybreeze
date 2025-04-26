@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Digital Marketing Company</title>
+  <title>Lady Breeze</title>
+ 
   
   <!-- TailwindCSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -17,27 +18,102 @@
   </script>
 </head>
 
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-50 text-green-800">
 
   <!-- Header -->
-  <header class="bg-white shadow-md">
-    <div class="container mx-auto flex justify-between items-center py-4 px-6">
-      <div class="text-2xl font-bold text-indigo-600">MarketPro</div>
-      <nav class="space-x-6 text-gray-600">
-        <a href="#" class="hover:text-indigo-500">Home</a>
-        <a href="#services" class="hover:text-indigo-500">Services</a>
-        <a href="#about" class="hover:text-indigo-500">About</a>
-        <a href="#contact" class="hover:text-indigo-500">Contact</a>
-      </nav>
+ <header class="bg-white shadow-md">
+  <div class="border-t-8 border-red-600"></div> <!-- Red line on top -->
+
+  <div class="container mx-auto flex justify-between items-center px-6" style="height: 100px;"> <!-- Fixed height -->
+    <div class="flex items-center space-x-4 h-full">
+      <img src="lblogo.png" alt="LadyBreeze Logo" class="h-full object-contain pt-2">
+      <span class="text-5xl font-bold text-red-600">Lady&nbsp;Breeze</span>
+      
     </div>
-  </header>
+    <nav class="space-x-6 text-gray-600">
+      <a href="#" class="hover:text-indigo-500">Home</a>
+      <a href="#services" class="hover:text-indigo-500">Services</a>
+      <a href="#about" class="hover:text-indigo-500">About</a>
+      <a href="#contact" class="hover:text-indigo-500">Contact</a>
+    </nav>
+  </div>
+
+  <div class="border-b-8 border-red-600"></div> <!-- Red line at bottom -->
+</header>
+
+
 
   <!-- Hero Section -->
   <section class="bg-indigo-600 text-white py-20">
     <div class="container mx-auto text-center px-6">
-      <h1 class="text-4xl md:text-6xl font-bold mb-6">Grow Your Business Online</h1>
-      <p class="mb-8 text-lg">Expert digital marketing solutions to skyrocket your brand.</p>
+      <h1 class="text-4xl md:text-6xl font-bold mb-6">Your Cosmetic Partner</h1>
+      <p class="mb-8 text-lg">for your all cosmetic needs.</p>
       <a href="#contact" class="bg-white text-indigo-600 font-semibold px-6 py-3 rounded-full hover:bg-gray-100">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Area Filter Section -->
+  <section class="py-10 bg-gray-50">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-2xl font-bold mb-6">Browse by Area</h2>
+      <div class="inline-block relative w-64 mb-6">
+        <select id="areaFilter" class="block appearance-none w-full bg-gray-100 border border-gray-300 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-indigo-500">
+          <option value="">Select an Area</option>
+          <option>Ampara</option>
+          <option>Anuradhapura</option>
+          <option>Badulla</option>
+          <option>Batticaloa</option>
+          <option>Colombo</option>
+          <option>Galle</option>
+          <option>Gampaha</option>
+          <option>Hambantota</option>
+          <option>Jafna</option>
+          <option>Kaluthara</option>
+          <option>Kandy</option>
+          <option>Kegalle</option>
+          <option>Kilinochchi</option>
+          <option>Kurunegala</option>
+          <option>Mannar</option>
+          <option>Matale</option>
+          <option>Matara</option>
+          <option>Monaragala</option>
+          <option>Mullativu</option>
+          <option>Nuwara Eliya</option>
+          <option>Polonnaruwa</option>
+          <option>Puttalam</option>
+          <option>Ratnapura</option>
+          <option>Trincomalee</option>
+          <option>Vavunia</option>
+        </select>
+        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+          <svg class="fill-current h-4 w-4" viewBox="0 0 20 20"><path d="M5.516 7.548a.5.5 0 0 1 .707 0L10 11.293l3.777-3.745a.5.5 0 0 1 .707.707l-4.23 4.198a.5.5 0 0 1-.707 0l-4.23-4.198a.5.5 0 0 1 0-.707z"/></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category Filter Section -->
+  <section class="py-10 bg-gray-50">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-2xl font-bold mb-6">Browse by Category</h2>
+      <div class="inline-block relative w-64">
+        <select id="categoryFilter" class="block appearance-none w-full bg-gray-100 border border-gray-300 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-indigo-500">
+          <option value="">Select a Category</option>
+          <option>Auto</option>
+          <option>Property</option>
+          <option>Electronics</option>
+          <option>Home & Garden</option>
+          <option>Hobby & Sport</option>
+          <option>Animal</option>
+          <option>Fashion</option>
+          <option>Academic</option>
+          <option>Jobs</option>
+          <option>Necessity</option>
+        </select>
+        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+          <svg class="fill-current h-4 w-4" viewBox="0 0 20 20"><path d="M5.516 7.548a.5.5 0 0 1 .707 0L10 11.293l3.777-3.745a.5.5 0 0 1 .707.707l-4.23 4.198a.5.5 0 0 1-.707 0l-4.23-4.198a.5.5 0 0 1 0-.707z"/></svg>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -75,20 +151,20 @@
     <div class="container mx-auto px-6 text-center">
       <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
       <p class="mb-6">Ready to start? Get in touch with us today!</p>
-      <a href="mailto:info@marketpro.com" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-full hover:bg-indigo-700">Email Us</a>
+      <a href="mailto:ladybreeze@asia.com" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-full hover:bg-indigo-700">Email Us</a>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="bg-white py-6 mt-10 border-t">
     <div class="container mx-auto px-6 text-center text-gray-500">
-      &copy; 2025 MarketPro Digital Marketing. All rights reserved.
+      &copy; 2025 LadyBreeze. All rights reserved.
     </div>
   </footer>
 
-  <!-- Simple JavaScript Example -->
+  <!-- JavaScript -->
   <script>
-    // Example JS: Smooth Scroll
+    // Smooth Scroll
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -97,4 +173,26 @@
         });
       });
     });
+
+    // Area Filter
+    document.getElementById('areaFilter').addEventListener('change', function () {
+      const selectedArea = this.value;
+      if (selectedArea) {
+        alert('You selected Area: ' + selectedArea);
+        // Later you can filter items by selectedArea
+      }
+    });
+
+    // Category Filter
+    document.getElementById('categoryFilter').addEventListener('change', function () {
+      const selectedCategory = this.value;
+      if (selectedCategory) {
+        alert('You selected Category: ' + selectedCategory);
+        // Later you can filter items by selectedCategory
+      }
+    });
   </script>
+
+</body>
+
+</html>
